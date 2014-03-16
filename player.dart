@@ -13,8 +13,8 @@ class Player {
   
     player = document.querySelector('#man_player');
     document.onMouseMove.listen((MouseEvent e) {
-      x = e.offset.x - 15;
-      y = e.offset.y - 15;
+      x = e.offset.x - 1;
+      y = e.offset.y - 1;
     });
     draw();
   }

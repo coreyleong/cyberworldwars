@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="cw2game.css">
   </head>
   <body>
+    <table border="0">
+      <tr>
+        <td width="300">
     <p><b>CyberWorldWars Game</b> by Corey Leong<br/>
-    <a href="http://coreyleong.org/w/index.php/CyberWorldWars">Return to Documentation</a></p>
-    
+    <a href="http://coreyleong.org/w/index.php/CyberWorldWars">Return to Documentation</a>
+    </p>
+        </td>
+        <td width="600">
+          <section>
+            <canvas id="scoreboard" width="300" height="50">
+              Awww Snap. Your browser does not support HTML5.
+            </canvas>
+          </section>
+        </td>
+      </tr>
+    </table>    
     <section>
       <canvas id="canvas" width="800" height="500">
       <img id="cloud" src="images/cloud.png"></img>
@@ -22,6 +35,12 @@
       <img id="hcable" src="images/hcable.png"></img>
       <img id="vcable" src="images/vcable.png"></img>
        Awww Snap. Your browser does not support HTML5.
+      </canvas>
+      <canvas id="terminal" width="800" height="75">
+        <div>
+          <span id="commandline" ></span>
+        </div>
+       Awww Snap. Your browser does not support HTML5. 
       </canvas>
     <script type="application/dart" src="cw2game.dart"></script>
     <script src="packages/browser/dart.js"></script>
