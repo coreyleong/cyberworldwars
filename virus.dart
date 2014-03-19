@@ -21,21 +21,23 @@ class Virus {
   
   move() {
   
-    y = y + 2;
-    x = x + 2;
-    random = new Random().nextInt(900);
-    if (y >= board.height) {
+    if (x <= 375) {
       reappear = true;
     } else {
       reappear = false;
     }
     if (reappear) {
       visible = true;
-      y = -random;
-      x = random; 
+     // y = 50;
+      x = x + 1;
     }
     draw();
-  
+    
+    if ((x >= 376 ) && ( y <= 294)) {
+      y = y +1;
+    }
+    draw();  
+    
   }
   
   draw() {
