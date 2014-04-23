@@ -12,8 +12,7 @@ class Board {
   Player player;
   Desktop desktop;
   Antivirus antivirus;
-  Virus virus;
-  Virus virus2;
+  Virus virus1;
   Hcable hcable;
   Vcable vcable;
   Vcable vcable2;
@@ -29,12 +28,11 @@ class Board {
     nswitch = new NSwitch(this, 355, 200, 110, 35);
     desktop = new Desktop(this, 365, 293, 87, 85);
     player = new Player(this, 350, 350, 70, 130);
-    virus = new Virus(this, 50, 100, 73, 75);
-    virus2 = new Virus(this, 50, 100, 73, 75);
+    virus1 = new Virus(this, 50, 100, 73, 75);
     hcable = new Hcable(this, 170, 95, 230, 11);
     vcable = new Vcable(this, 400, 128, 11, 91);
     vcable2 = new Vcable(this, 400, 220, 11, 91);
-    antivirus = new Antivirus(this, 20, 1, 5, 20);
+    antivirus = new Antivirus(this, 20, 1, 5, 20, virus1);
     border();
     window.animationFrame.then(gameLoop);
   }
@@ -70,8 +68,7 @@ class Board {
     nswitch.draw();
     desktop.draw();
     player.draw(); 
-    virus.draw();
-    virus2.draw();
+    virus1.draw();
     hcable.draw();
     vcable.draw();
     vcable2.draw();

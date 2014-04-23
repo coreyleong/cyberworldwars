@@ -16,6 +16,7 @@ part 'virus.dart';
 part 'hcable.dart';
 part 'vcable.dart';
 part 'antivirus.dart';
+part 'points.dart';
 
 
 void main() {

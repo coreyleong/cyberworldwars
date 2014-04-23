@@ -6,14 +6,17 @@ class Scoreboard {
   int y = 0;
   int width;
   int height;
+  var points = "0";
+  Virus virus1;
   CanvasRenderingContext2D context;
   
-  Scoreboard(CanvasElement canvas) {
+  Scoreboard(CanvasElement canvas)  {
   
     context = canvas.getContext('2d');
     width = canvas.width;
     height = canvas.height;
-    clear();
+    
+    draw();
     text();
     playerlives();
     pointsscored();
